@@ -55,7 +55,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 120px 0;
+  margin: 120px 0 40px;
 }
 
 .weather-search {
@@ -189,4 +189,21 @@ a {
 
 .weather-forecast-date {
   font-size: 14px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.open-source {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: #5e5794;
+}
+
+.open-source a {
+  display: block;
+  color: #5e5794;
+  text-decoration: underline;
 }
