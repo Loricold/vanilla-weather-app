@@ -33,54 +33,52 @@
     <div class="container">
       <div class="row weather-app">
         <div class="col-6 weather-search">
-          <p class="logo">forecast</p>
           <h1>Weather forecast you need</h1>
-          <form class="search-form" id="search-form">
-            <div class="input-group search-group">
-              <div class="form-outline">
-                <input
-                  type="search"
-                  id="city-input"
-                  class="form-control search-input"
-                  placeholder="Search"
-                  autocomplete="off"
-                />
+          <div class="search">
+            <form class="search-form" id="search-form">
+              <div class="input-group search-group">
+                <div class="form-outline">
+                  <input
+                    type="search"
+                    id="city-input"
+                    class="form-control search-input"
+                    placeholder="Search"
+                    autocomplete="off"
+                  />
+                </div>
+                <button type="submit" class="btn btn-search">
+                  <i class="fas fa-search"></i>
+                </button>
               </div>
-              <button type="submit" class="btn btn-search">
-                <i class="fas fa-search"></i>
-              </button>
-              <button
-                type="submit"
-                class="current-location"
-                id="current-location"
-              >
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>
-              </button>
-            </div>
-          </form>
+            </form>
+            <button
+              type="submit"
+              class="current-location"
+              id="current-location"
+            >
+              <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+            </button>
+          </div>
         </div>
         <div class="col-6 weather-forecast">
           <h2 id="city"></h2>
           <ul>
-            <li id="date"></li>
+            <li>Last updated: <span id="date"></span></li>
             <li id="weather-description"></li>
           </ul>
           <div class="row weather-now">
-            <div class="col-7">
-              <div class="row">
+            <div class="col-5">
+              <div class="row current-weather">
                 <div class="col-6">
                   <img src="" alt="" id="icon" />
                 </div>
                 <div class="col-6">
                   <span class="temperature" id="temperature"></span>
-                  <span class="units">
-                    <a href="#" id="celsius-link" class="active"> °C</a> |
-                    <a href="#" id="fahrenheit-link"> °F</a>
-                  </span>
+                  <span class="units"> °C </span>
                 </div>
               </div>
             </div>
-            <div class="col-5">
+            <div class="col-6 weather-now-details">
               <div class="row">
                 <div class="col-6">
                   <h4><span id="feels-like-temp"></span> °</h4>
@@ -92,7 +90,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-6">as
+                <div class="col-6">
                   <h4 id="pressure"></h4>
                   <p>Pressure</p>
                 </div>
@@ -104,6 +102,7 @@
             </div>
           </div>
           <div class="week-forecast">
+            <h3>Daily</h3>
             <div class="row" id="forecast"></div>
           </div>
         </div>

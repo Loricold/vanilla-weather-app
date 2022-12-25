@@ -182,32 +182,4 @@ function displayCurrentWeather(response) {
   getForecast(response.data.coordinates);
 }
 
-// temperature;
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  changeToCelsius.classList.remove("active");
-  changeToFahrenheit.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let temperature = celsiusTemperature;
-  temperature = Number(temperature);
-  temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  changeToFahrenheit.classList.remove("active");
-  changeToCelsius.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
-let changeToFahrenheit = document.querySelector("#fahrenheit-link");
-changeToFahrenheit.addEventListener("click", convertToFahrenheit);
-
-let changeToCelsius = document.querySelector("#celsius-link");
-changeToCelsius.addEventListener("click", convertToCelsius);
-
 searchCity("Katowice");

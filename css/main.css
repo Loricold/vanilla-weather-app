@@ -15,15 +15,47 @@ body {
 
 h1 {
   color: #5e5794;
-  margin-top: 60px;
   font-size: 35px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .weather-app {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 90px 0;
+  margin: 120px 0;
 }
 
 .weather-search {
@@ -31,9 +63,9 @@ h1 {
   padding: 40px;
 }
 
-.location {
+.search {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .city-search {
@@ -55,17 +87,26 @@ h1 {
   border-radius: 0 15px 15px 0;
   background: #5e5794;
   color: #fff;
+  border: transparent;
+}
+
+.btn-search:hover,
+.btn-search:active {
+  border-radius: 0 15px 15px 0;
+  background: #5e5794;
+  color: #fff;
+  border: transparent;
 }
 
 .current-location {
   border: none;
   background: transparent;
   font-size: 25px;
-  color: #0a58ce;
+  color: #5e5794;
 }
 
 .weather-forecast {
-  padding: 40px;
+  padding: 50px 30px 50px 60px;
   background: linear-gradient(
     209.29deg,
     rgba(19, 19, 51, 0.18) 17.19%,
@@ -73,7 +114,43 @@ h1 {
   );
 
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 35px 0px rgb(101 116 169 / 82%);
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+}
+
+.weather-now {
+  display: flex;
+  justify-content: center;
+}
+
+.weather-now img {
+  transition: 0.3s;
+}
+
+.weather-now:hover img {
+  transform: scale(1.2);
+}
+
+.weather-now-details {
+  border-left: 2px solid #fcfcff38;
+  height: 100%;
+  padding: 10px 0 0 20px;
+}
+
+.temperature {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+}
+
+.units {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .card-group {
@@ -103,8 +180,13 @@ h1 {
   justify-content: space-around;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .card-title {
   margin-bottom: 0;
+}
+
+.weather-forecast-date {
+  font-size: 14px;
 }
