@@ -215,4 +215,8 @@ a {
   .temperature {
     font-size: 56px;
   }
+
+  .current-location {
+    font-size: 20px;
+  }
 }
