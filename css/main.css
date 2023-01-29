@@ -207,3 +207,12 @@ a {
   color: #5e5794;
   text-decoration: underline;
 }
+
+@media (max-width: 1200px) {
+  .weather-app {
+    margin: 40px 0;
+  }
+  .temperature {
+    font-size: 56px;
+  }
+}

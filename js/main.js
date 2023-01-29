@@ -85,7 +85,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-2 card">
+      <div class="col-sm-2 card">
       <div class="card-body">
         <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
         <img src="${forecastDay.condition.icon_url}" alt="${
