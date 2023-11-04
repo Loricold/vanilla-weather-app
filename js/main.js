@@ -40,44 +40,6 @@ function displayForecast(response) {
 
   let forecast = response.data.daily;
 
-  // let forecastHTML = `<div class="row">`;
-  // forecast.forEach(function (forecastDay) {
-  //   forecastHTML =
-  //     forecastHTML +
-  //     `<div class="row weather-forecast">
-  //           <div class="col-2 weather-forecast-date">${forecastDay.time}</div>
-  //           <div class="col-2 weather-forecast-icon">
-  //             <img src="${forecastDay.condition.icon_url}" alt="${
-  //       forecastDay.condition.icon
-  //     }" />
-  //           </div>
-  //           <div class="col-2 weather-forecast-temperatures">
-  //              <span class="weather-forecast-temperature-min">${Math.round(
-  //                forecastDay.temperature.minimum
-  //              )}° </span>
-  //             Low
-  //           </div>
-  //           <div class="col-2 weather-forecast-temperatures">
-  //             <span class="weather-forecast-temperature-max">${Math.round(
-  //               forecastDay.temperature.maximum
-  //             )}° </span>
-  //             High
-  //           </div>
-  //           <div class="col-2 weather-forecast-wind">
-  //             <span class="weather-forecast-wind-speed">${Math.round(
-  //               forecastDay.wind.speed
-  //             )} mph</span>
-  //             Wind
-  //           </div>
-  //           <div class="col-2 weather-forecast-humidity">
-  //             <span class="weather-forecast-wind-speed">${Math.round(
-  //               forecastDay.temperature.humidity
-  //             )} %</span>
-  //             Humidity
-  //           </div>
-  //         </div>`;
-  // });
-
   let forecastHTML = `<div class="row">
   <div class="card-group">`;
   forecast.forEach(function (forecastDay, index) {
